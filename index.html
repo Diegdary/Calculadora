@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calc</title>
+    <script src="https://kit.fontawesome.com/555c819e5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="all_body">
+        <div class="calc">
+            <div class="grid-container">
+                    <div class="grid-item display">
+                        <div id="result">0</div>
+                    </div>
+                    <button onclick="off()" class="grid-item symbol">ON</button>
+                    <button onclick="reset()" class="grid-item">C</button>
+                    <div onclick="remove()" class="grid-item symbol"> <i class="fa-solid fa-delete-left"></i> </div>
+                    <div onclick="set(7)" class="grid-item symbol"> <i class="fa-solid fa-7"></i> </div>
+                    <div onclick="set(8)" class="grid-item symbol"> <i class="fa-solid fa-8"></i> </div>
+                    <div onclick="set(9)" class="grid-item symbol"> <i class="fa-solid fa-9"></i> </div>
+                    <div onclick="add_op('x')" class="grid-item symbol"> <i class="fa-solid fa-xmark"></i> </div>
+                    <div onclick="set(4)" class="grid-item symbol"> <i class="fa-solid fa-4"></i> </div>
+                    <div onclick="set(5)" class="grid-item symbol"> <i class="fa-solid fa-5"></i> </div>
+                    <div onclick="set(6)" class="grid-item symbol"> <i class="fa-solid fa-6"></i> </div>
+                    <div onclick="add_op('-')" class="grid-item symbol"> <i class="fa-solid fa-minus"></i> </div>
+                    <div onclick="set(1)" class="grid-item symbol"> <i class="fa-solid fa-1"></i> </div>
+                    <div onclick="set(2)" class="grid-item symbol"> <i class="fa-solid fa-2"></i> </div>
+                    <div onclick="set(3)" class="grid-item symbol"> <i class="fa-solid fa-3"></i> </div>
+                    <div onclick="add_op('+')" class="grid-item symbol"> <i class="fa-solid fa-plus"></i> </div>
+                    <button onclick="add_ans()" class="grid-item">Ans</button>
+                    <div onclick="set(0)" class="grid-item symbol"> <i class="fa-solid fa-0"></i> </div>
+                    <div onclick="add_op('÷')" class="grid-item symbol"> <i class="fa-solid fa-divide"></i> </div>
+                    <div onclick="answer(0)" class="grid-item symbol"> <i class="fa-solid fa-equals"></i> </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="calc.js"></script>
+</body> 
+</html>
